@@ -1,4 +1,4 @@
-package katomakhin.app.shop.entity;
+package katomakhin.app.shop.entity.rented;
 
 import katomakhin.app.shop.entity.equipment.SportEquipment;
 
