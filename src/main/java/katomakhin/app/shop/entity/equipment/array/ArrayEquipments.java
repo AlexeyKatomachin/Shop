@@ -9,7 +9,7 @@ import java.util.List;
  * Created by ${Alexey} on ${09.08.2016}.
  */
 public class ArrayEquipments {
-    private ArrayList<SportEquipment> sportEquipments = new ArrayList<SportEquipment>();
+    private ArrayList<SportEquipment> sportEquipments = new ArrayList<>();
 
     public void setSportEquipments(ArrayList<SportEquipment> sportEquipments) {
         this.sportEquipments = sportEquipments;
