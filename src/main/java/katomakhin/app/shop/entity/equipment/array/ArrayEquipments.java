@@ -11,7 +11,11 @@ import java.util.List;
 public class ArrayEquipments {
     private ArrayList<SportEquipment> sportEquipments = new ArrayList<SportEquipment>();
 
-    public void setSportEquipments(SportEquipment sportEquipments){
+    public void setSportEquipments(ArrayList<SportEquipment> sportEquipments){
+        this.sportEquipments = sportEquipments;
+    }
+
+    public void add(SportEquipment sportEquipments){
         this.sportEquipments.add(sportEquipments);
     }
 

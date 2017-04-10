@@ -2,17 +2,18 @@ package katomakhin.app.shop.entity;
 
 import katomakhin.app.shop.entity.equipment.SportEquipment;
 
+import java.util.HashMap;
 import java.util.Map;
 
 public class Shop {
-    private Map<SportEquipment,Integer> goods;
+    private Map<SportEquipment,Integer> goods = new HashMap<>();
 
-    public void setGoods(SportEquipment unit){
-        if (goods.size() == 0){
-            goods.put(unit,0);
-        }else {
-            goods.put(unit,goods.size()+1);
-        }
+    public void setGoods(Map<SportEquipment,Integer> goods){
+        this.goods = goods;
+    }
+
+    public void add(SportEquipment unit){
+        goods.put(unit,unit.getAmount());
     }
 
     public Map<SportEquipment,Integer> getGoods(){

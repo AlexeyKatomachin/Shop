@@ -2,15 +2,15 @@ package katomakhin.app.shop.facade;
 
 import katomakhin.app.shop.entity.Shop;
 import katomakhin.app.shop.entity.equipment.SportEquipment;
+import katomakhin.app.shop.entity.user.User;
 
-import java.util.ArrayList;
+import java.util.List;
 
-/**
- * Created by ${Alexey} on ${09.08.2016}.
- */
 public interface ShopManagerInterface {
-    void rentEquipment(String title);
-    ArrayList<SportEquipment> getFreeEquipment();
+    Shop rentEquipment(String title,Shop shop,User user);
+    List<SportEquipment> freeEquipment();
+    List<SportEquipment> rentEquipment();
     Shop initShop();
-
+    void printFreeEquipment();
+    void printRentEquipment();
 }

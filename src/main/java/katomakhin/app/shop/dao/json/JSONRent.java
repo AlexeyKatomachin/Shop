@@ -20,7 +20,8 @@ public class JSONRent implements RentInterface {
         ArrayRentEquipments arrayRentEquipments;
         try {
             arrayRentEquipments = mapper.readValue(new File("D:\\ProizPractic\\Shop\\src\\main\\resources\\json\\rent.json"),ArrayRentEquipments.class);
-            arrayRentEquipments.setRentArray(rent);
+            arrayRentEquipments.add(rent);
+            mapper.writeValue(new File("D:\\ProizPractic\\Shop\\src\\main\\resources\\json\\rent.json"),arrayRentEquipments);
         }catch (IOException e){
             e.printStackTrace();
         }
