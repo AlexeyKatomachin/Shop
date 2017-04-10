@@ -38,7 +38,7 @@ public class ShopManager implements ShopManagerInterface{
         Rent rent = new Rent();
         rent.setSportEquipment(sportEquipment);
         rent.setUserID(user.getUserID());
-        rents.add(rent);
+        new JSONRent().update(rent);
         return shop;
     }
 
@@ -61,7 +61,7 @@ public class ShopManager implements ShopManagerInterface{
         for (Rent rent:new JSONRent().getAllRentEquipment()) {
             equipments.add(rent.getSportEquipment());
         }
-        new JSONRent().getAllRentEquipment();
+        return equipments;
     }
 
     @Override
@@ -76,11 +76,17 @@ public class ShopManager implements ShopManagerInterface{
     @Override
     public void printFreeEquipment() {
         List<SportEquipment> freeEquipment = freeEquipment();
+        for (SportEquipment equipment: freeEquipment) {
+            System.out.println(equipment.toString());
+        }
     }
 
     @Override
     public void printRentEquipment() {
-
+        List<SportEquipment> rentEquipment = rentEquipment();
+        for (SportEquipment equipment: rentEquipment) {
+            System.out.println(equipment.toString());
+        }
     }
 
 
