@@ -6,7 +6,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Shop {
-    private Map<SportEquipment,Integer> goods = new HashMap<>();
+    private Map<SportEquipment, Integer> goods = new HashMap<>();
 
     public void setGoods(Map<SportEquipment,Integer> goods){
         this.goods = goods;

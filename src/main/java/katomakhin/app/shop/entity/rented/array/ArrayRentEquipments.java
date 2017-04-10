@@ -10,15 +10,15 @@ import java.util.ArrayList;
 public class ArrayRentEquipments {
     private ArrayList<Rent> rentArray = new ArrayList<Rent>();
 
-    public void setRentArray(ArrayList<Rent> rentArray){
+    public void setRentArray(ArrayList<Rent> rentArray) {
         this.rentArray = rentArray;
     }
 
-    public void add (Rent rent){
+    public void add(Rent rent) {
         rentArray.add(rent);
     }
 
-    public ArrayList<Rent> getRentArray(){
+    public ArrayList<Rent> getRentArray() {
         return rentArray;
     }
 }

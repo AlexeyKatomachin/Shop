@@ -6,11 +6,11 @@ package katomakhin.app.shop.entity.user;
 public class User {
     private String userID;
 
-    public void setUserID(String userID){
+    public void setUserID(String userID) {
         this.userID = userID;
     }
 
-    public String getUserID(){
+    public String getUserID() {
         return userID;
     }
 }

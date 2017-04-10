@@ -7,5 +7,6 @@ import java.util.ArrayList;
 
 public interface RentInterface {
     void update(Rent rent);
+
     ArrayList<Rent> getAllRentEquipment();
 }

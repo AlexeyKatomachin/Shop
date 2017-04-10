@@ -1,7 +1,9 @@
 package katomakhin.app.shop;
 
-/**
- * Created by ${Alexey} on ${09.08.2016}.
- */
+import katomakhin.app.shop.application.StartMenu;
+
 public class Application {
+    public static void main(String []args){
+        new StartMenu().start();
+    }
 }

@@ -10,8 +10,11 @@ import java.io.IOException;
  */
 public interface ShopInterface {
     ArrayEquipments getAllEquipment();
-    SportEquipment [] getEquipmentsByCategory (String category);
+
+    SportEquipment[] getEquipmentsByCategory(String category);
+
     void reserve(String title);
+
     SportEquipment getEquipment(String title) throws IOException;
 
 }

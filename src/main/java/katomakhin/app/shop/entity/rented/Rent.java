@@ -9,19 +9,19 @@ public class Rent {
     private SportEquipment sportEquipment;
     private String userID;
 
-    public void setSportEquipment(SportEquipment sportEquipment){
+    public void setSportEquipment(SportEquipment sportEquipment) {
         this.sportEquipment = sportEquipment;
     }
 
-    public SportEquipment getSportEquipment (){
+    public SportEquipment getSportEquipment() {
         return sportEquipment;
     }
 
-    public void setUserID(String userID){
+    public void setUserID(String userID) {
         this.userID = userID;
     }
 
-    public String getUserID(){
-        return  userID;
+    public String getUserID() {
+        return userID;
     }
 }
